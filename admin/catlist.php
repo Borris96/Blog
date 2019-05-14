@@ -2,8 +2,8 @@
 /**
 *
 **/ 
-require('/var/www/html/Blog/lib/config.php');
-require('/var/www/html/Blog/lib/mysql.php');
+require('/var/www/html/Blog/lib/init.php');
+
 // Get category names
 $sqli = 'SELECT * FROM cat';
 $result = mQuery($sqli);

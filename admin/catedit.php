@@ -1,7 +1,7 @@
 <?php 
 
-require('/var/www/html/Blog/lib/config.php');
-require('/var/www/html/Blog/lib/mysql.php');
+require('/var/www/html/Blog/lib/init.php');
+
 $cat_id = $_GET['cat_id'];
 
 if (empty($_POST)){
@@ -10,16 +10,25 @@ if (empty($_POST)){
 	// var_dump($cat);
 }
 else {
-	$sqli = "UPDATE cat SET cat_name = '$_POST[catname]' where cat_id = $cat_id";
-	$result = mQuery($sqli);
-	if (!$result){
-		echo 'Update Failed.';
-	}
-	else {
-		// header("Refresh:3;url=./catlist.php");
-		header("location:./catlist.php"); // Redirect to list
-		echo 'Update Successful.';
-	}
+    $catname = trim($_POST['catname']);
+    if (empty($catname)){
+        echo 'The category name should not be empty.';
+        header("Refresh:1; url='./catedit.php?cat_id=$cat_id'");
+    }
+    else
+    {
+        $sqli = "UPDATE cat SET cat_name = '$catname' where cat_id = $cat_id";
+        $result = mQuery($sqli);
+        if (!$result){
+            echo 'Update Failed.';
+            header("Refresh:1; url='./catedit.php?cat_id=$cat_id'");
+        }
+        else {
+            // header("Refresh:3;url=./catlist.php");
+            header("location:./catlist.php"); // Redirect to list
+            echo 'Update Successful.';
+        }   
+    }
 }
 ?>
 

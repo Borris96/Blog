@@ -5,31 +5,45 @@
 * Adding category for the blog.
 **/
 
-require('/var/www/html/Blog/lib/config.php');
-require('/var/www/html/Blog/lib/mysql.php');
+require('/var/www/html/Blog/lib/init.php');
 if (empty($_POST)){
-	include('./catadd.html');
+	include(ROOT . '/admin/catadd.html');
 }
 else{
-	//If $_POST exists, check if it is empty.
+	// If $_POST exists, check if it is empty.
 	$catname = trim($_POST['catname']);
 	// var_dump($catname);
 	if (empty($catname)){
-		exit('The category name should not be empty.');
+		echo 'The category name should not be empty.';
+        header("Refresh:1; url='./catadd.php'");
 	}
-	
-	$sqli = "INSERT INTO cat(cat_name) VALUES ('$catname')";
-	$result = mQuery($sqli);
 
-	if (!$result){
-		echo 'Add Unsuccessfully.';
-		exit();
-	}
-	else{
-		echo 'Add Successfully';
-		header("Refresh:1;url=./catlist.php");
-	}
+    // Check if it has already exsited
+    // var_dump($catname);
+    else{
+        $sqli = "SELECT count(*) FROM cat WHERE cat_name = '$catname'";
+        $name = mGetOne($sqli);
+        // var_dump($name);
+        if ($name != 0){
+            echo 'The category name has already existed.';
+            header("Refresh:1; url='./catadd.php'");
+        }
+        
+        else{
+            $sqli = "INSERT INTO cat(cat_name) VALUES ('$catname')";
+            $result = mQuery($sqli);
+
+            if (!$result){
+                echo 'Add Unsuccessfully.';
+                exit();
+            }
+            else{
+                echo 'Add Successfully';
+                header("Refresh:1;url=./catlist.php");
+            }
+        }
+    }
+
 }
 
-
- ?>
+?>

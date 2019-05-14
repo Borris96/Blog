@@ -1,6 +1,5 @@
 <?php 
-require('/var/www/html/Blog/lib/config.php');
-require('/var/www/html/Blog/lib/mysql.php');
+require('/var/www/html/Blog/lib/init.php');
 
 $cat_id = $_GET['cat_id'];
 // var_dump($cat_id);

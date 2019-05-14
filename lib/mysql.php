@@ -16,7 +16,7 @@ function mConn(){
 	// $password = '19961127';
 	// $dbname = 'Blog';
 	if ($link == null){
-		$cfg = include('/var/www/html/Blog/lib/config.php');
+		$cfg = include(ROOT . '/lib/config.php');
 		$link = mysqli_connect($cfg['server'], $cfg['username'], $cfg['password'], $cfg['dbname']);
 		if (!$link){
 			die('Connection Failed.'.mysql_connection_error());
@@ -84,12 +84,13 @@ function mGetRow($sqli){
 
 function mGetOne($sqli){
 	$rs = mQuery($sqli);
+	// var_dump($rs);
 	if ($rs){
 		$row = mysqli_fetch_row($rs); // row use integer as index, and assoc use string as index (count(*) in this case)
 		return $row[0];
 	}
 	else{
-		return flase;
+		return false;
 	}
 }
 
