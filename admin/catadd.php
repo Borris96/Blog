@@ -14,8 +14,9 @@ else{
 	$catname = trim($_POST['catname']);
 	// var_dump($catname);
 	if (empty($catname)){
-		echo 'The category name should not be empty.';
-        header("Refresh:1; url='./catadd.php'");
+        // echo 'The category name should not be empty.';
+        // header("Refresh:1; url='./catadd.php'");
+        fail('The category name should not be empty.');
 	}
 
     // Check if it has already exsited
@@ -25,8 +26,8 @@ else{
         $name = mGetOne($sqli);
         // var_dump($name);
         if ($name != 0){
-            echo 'The category name has already existed.';
-            header("Refresh:1; url='./catadd.php'");
+            fail('The category name has already existed.');
+            // header("Refresh:1; url='./catadd.php'");
         }
         
         else{
@@ -34,12 +35,14 @@ else{
             $result = mQuery($sqli);
 
             if (!$result){
-                echo 'Add Unsuccessfully.';
-                exit();
+                fail('Add Unsuccessfully.');
+                // echo 'Add Unsuccessfully.';
+                // exit();
             }
             else{
-                echo 'Add Successfully';
-                header("Refresh:1;url=./catlist.php");
+                // echo 'Add Successfully';
+                succ('Add Successfully.');
+                // header("Refresh:1;url=./catlist.php");
             }
         }
     }

@@ -12,21 +12,24 @@ if (empty($_POST)){
 else {
     $catname = trim($_POST['catname']);
     if (empty($catname)){
-        echo 'The category name should not be empty.';
-        header("Refresh:1; url='./catedit.php?cat_id=$cat_id'");
+        fail('The category name should not be empty.');
+        // echo 'The category name should not be empty.';
+        // header("Refresh:1; url='./catedit.php?cat_id=$cat_id'");
     }
     else
     {
         $sqli = "UPDATE cat SET cat_name = '$catname' where cat_id = $cat_id";
         $result = mQuery($sqli);
         if (!$result){
-            echo 'Update Failed.';
-            header("Refresh:1; url='./catedit.php?cat_id=$cat_id'");
+            fail('Update Failed.');
+            // echo 'Update Failed.';
+            // header("Refresh:1; url='./catedit.php?cat_id=$cat_id'");
         }
         else {
             // header("Refresh:3;url=./catlist.php");
-            header("location:./catlist.php"); // Redirect to list
-            echo 'Update Successful.';
+            succ('Update Successful.');
+            // header("location:./catlist.php"); // Redirect to list
+            // echo 'Update Successful.';
         }   
     }
 }

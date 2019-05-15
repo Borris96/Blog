@@ -7,4 +7,5 @@ define('ROOT', dirname(__DIR__));
 // echo ROOT;
 require(ROOT.'/lib/mysql.php');
 require(ROOT.'/lib/config.php');
+require(ROOT.'/lib/func.php');
 ?>

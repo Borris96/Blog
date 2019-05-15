@@ -9,8 +9,9 @@ $sqli = 'SELECT * FROM cat';
 $result = mQuery($sqli);
 
 if (!$result){
-	echo 'Unable to get result';
-	exit();
+    fail('Unable to get result');
+	// echo 'Unable to get result';
+	// exit();
 }
 else{
     $cat = mGetall($sqli);

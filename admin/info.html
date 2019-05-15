@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/adm.css">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/adm.css">
 </head>
 <body>
     <header>
@@ -35,12 +35,13 @@
             </aside>
         </div>
         <div id="rside">
-            <div class="succ">成功</div>
-            <div class="danger">出错</div>
+            <?php if ($res === 'Succeed') {?>
+            <div class="succ"> <?php echo "$msg"; ?> </div> <?php } else if ($res === 'Fail') {?>
+            <div class="danger"><?php echo "$msg"; ?></div> <?php }?>
         </div>
     </div>
     <footer>
-        Copyright &copy; 2015 · GeneratePress · WordPress
+        Copyright &copy; 2019 · GeneratePress · WordPress
     </footer>
 </body>
 </html>
