@@ -1,0 +1,20 @@
+--------------------------------------
+2019/05/16 05:08:15
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 05:08:15
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Thrid','1','Hiiiiiiiiiiii','1558001295')
+
+--------------------------------------
+2019/05/16 05:09:12
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id
+
+--------------------------------------
+2019/05/16 05:09:12
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 05:09:48
+SELECT art_id, art.cat_id, cat_name, pubtime, title, comm, content FROM art LEFT JOIN cat ON art.cat_id = cat.cat_id
+

@@ -35,7 +35,14 @@ function mConn(){
 */
 
 function mquery($sqli){
-	return mysqli_query(mConn(),$sqli);
+	$rs = mysqli_query(mConn(),$sqli);
+	if($rs === false) {
+	mLog($sqli."\n".mysqli_error());
+	return $rs;
+	} else {
+	mLog($sqli);
+	return $rs;
+	}
 }
 
 /**
@@ -143,5 +150,17 @@ function mExec($table, $data, $act = 'INSERT', $where = '0'){
 
 function getLastID(){
 	return mysqli_insert_id(mConn());
+}
+
+/**
+*
+* 记录执行的 sql 以及出错信息
+* @param $log 记录的信息
+*/
+function mLog($log) {
+$path = ROOT.'/log/'.date('Ymd',time()).'.txt';
+//$path = '../log/'.date('Ymd',time()).'.txt';
+$head = '--------------------------------------'."\n".date('Y/m/d H:i:s',time()) ."\n";
+file_put_contents($path,$head.$log."\n"."\n",FILE_APPEND);
 }
 ?>
