@@ -18,3 +18,114 @@ SELECT * FROM cat
 2019/05/16 05:09:48
 SELECT art_id, art.cat_id, cat_name, pubtime, title, comm, content FROM art LEFT JOIN cat ON art.cat_id = cat.cat_id
 
+--------------------------------------
+2019/05/16 05:16:19
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id
+
+--------------------------------------
+2019/05/16 05:16:19
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 20:16:12
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 
+
+
+--------------------------------------
+2019/05/16 20:16:12
+SELECT cat_name, cat_id FROM cat
+
+--------------------------------------
+2019/05/16 20:17:43
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 2
+
+--------------------------------------
+2019/05/16 20:17:43
+SELECT cat_name, cat_id FROM cat
+
+--------------------------------------
+2019/05/16 20:18:04
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/16 20:18:04
+SELECT cat_name, cat_id FROM cat
+
+--------------------------------------
+2019/05/16 20:18:13
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 4
+
+--------------------------------------
+2019/05/16 20:18:13
+SELECT cat_name, cat_id FROM cat
+
+--------------------------------------
+2019/05/16 20:19:16
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 4
+
+--------------------------------------
+2019/05/16 20:19:16
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 20:49:37
+SELECT count(*), art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 4
+
+
+--------------------------------------
+2019/05/16 20:49:37
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 20:49:37
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 4
+
+--------------------------------------
+2019/05/16 20:51:26
+SELECT count(*), art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 4
+In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'Blog.art.art_id'; this is incompatible with sql_mode=only_full_group_by
+
+--------------------------------------
+2019/05/16 20:51:26
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 20:51:26
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 4
+
+--------------------------------------
+2019/05/16 20:52:24
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 3
+
+--------------------------------------
+2019/05/16 20:52:24
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 20:52:24
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 3
+
+--------------------------------------
+2019/05/16 20:59:13
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 3
+
+--------------------------------------
+2019/05/16 20:59:13
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 20:59:13
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 3
+
+--------------------------------------
+2019/05/16 21:05:39
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 3
+
+--------------------------------------
+2019/05/16 21:05:39
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 21:05:39
+SELECT cat_name, cat_id, num FROM cat
+

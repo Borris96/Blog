@@ -37,7 +37,7 @@ function mConn(){
 function mquery($sqli){
 	$rs = mysqli_query(mConn(),$sqli);
 	if($rs === false) {
-	mLog($sqli."\n".mysqli_error());
+	mLog($sqli."\n".mysqli_error(mConn()));
 	return $rs;
 	} else {
 	mLog($sqli);
