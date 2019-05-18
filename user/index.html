@@ -24,7 +24,7 @@
         <div id="lside">
             <?php foreach ($arts as $v) {?>
             <article>
-                <h2><a href="art.php?art_id=$art_id"> <?php echo $v['title']; ?> </a></h2>
+                <h2><?php echo "<a href='art.php?art_id=$v[art_id]'>";?> <?php echo $v['title']; ?> </a></h2>
                 <div class="entry_header">
                     <time><?php echo date("Y/m/d H:i:s",$v['pubtime']); ?></time>
                     by
@@ -77,8 +77,9 @@
             <aside>
                 <h4>所有栏目</h4>
                 <ul>
+                    <li><a href="index.php">All </a>&nbsp;(<?php echo $count?>)</li>
                     <?php foreach($cats as $v) {?>
-                    <li><a href="index.php?cat_id=$cat_id"> <?php echo $v['cat_name']; ?> </a>&nbsp;(<?php echo $v['num']?>)</li>
+                    <li><?php echo "<a href='index.php?cat_id=$v[cat_id]'>";?> <?php echo $v['cat_name']; ?> </a>&nbsp;(<?php echo $v['num']?>)</li>
                     <?php }?>
                 </ul>
             </aside>
@@ -112,7 +113,7 @@
         </div>
     </div>
     <footer>
-        Copyright &copy; 2015 · GeneratePress · WordPress
+        Copyright &copy; 2019 · GeneratePress · WordPress
     </footer>
 </body>
 </html>

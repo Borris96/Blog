@@ -28,8 +28,5 @@ else {
 $sqli = "SELECT cat_name, cat_id, num FROM cat";
 $cats = mGetAll($sqli);
 
-
-// echo $count;
-
 include(ROOT.'/user/index.html');
 ?>

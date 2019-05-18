@@ -37,6 +37,12 @@ else{
 		fail('Added is failed...');
 	}
 	else{
+		$sqli = "SELECT count(*) FROM art WHERE cat_id = $art[cat_id]";
+		$catn['num'] = mGetOne($sqli);
+		// echo $cat['num'];
+		// exit();
+
+		mExec('cat', $catn, 'UPDATE', "cat_id = $art[cat_id]");
 		succ('Added successfully!');
 	}
 }

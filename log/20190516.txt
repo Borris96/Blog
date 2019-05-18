@@ -129,3 +129,834 @@ SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, com
 2019/05/16 21:05:39
 SELECT cat_name, cat_id, num FROM cat
 
+--------------------------------------
+2019/05/16 21:22:59
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:23:14
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:23:14
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Hello','11','haha','1558059794')
+
+--------------------------------------
+2019/05/16 21:23:14
+SELECT count(*) FROM art WHERE cat_id = 11
+
+--------------------------------------
+2019/05/16 21:24:28
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:24:35
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:24:35
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Hello','1','haha','1558059875')
+
+--------------------------------------
+2019/05/16 21:24:35
+SELECT count(*) FROM art WHERE cat_id = 1
+
+--------------------------------------
+2019/05/16 21:24:57
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:24:57
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Hello','1','haha','1558059897')
+
+--------------------------------------
+2019/05/16 21:24:57
+SELECT count(*) FROM art WHERE cat_id = 1
+
+--------------------------------------
+2019/05/16 21:24:57
+UPDATE cat SET num='4' where cat_id = $art[cat_id]
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[cat_id]' at line 1
+
+--------------------------------------
+2019/05/16 21:27:31
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:27:53
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:27:53
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('New My First Article','1','dsdaf','1558060073')
+
+--------------------------------------
+2019/05/16 21:27:53
+SELECT count(*) FROM art WHERE cat_id = 1
+
+--------------------------------------
+2019/05/16 21:27:53
+UPDATE cat SET num='5' where cat_id = $art[cat_id]
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[cat_id]' at line 1
+
+--------------------------------------
+2019/05/16 21:29:11
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:29:15
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:29:15
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('New My First Article','1','dsdaf','1558060155')
+
+--------------------------------------
+2019/05/16 21:29:15
+SELECT count(*) FROM art WHERE cat_id = 1
+
+--------------------------------------
+2019/05/16 21:29:15
+UPDATE cat SET num='6' where cat_id = 1
+
+--------------------------------------
+2019/05/16 21:29:46
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 3
+
+--------------------------------------
+2019/05/16 21:29:46
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 21:29:46
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 21:34:52
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:35:26
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:35:27
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Hei','4','dsdaf','1558060526')
+
+--------------------------------------
+2019/05/16 21:35:27
+SELECT count(*) FROM art WHERE cat_id = 4
+
+--------------------------------------
+2019/05/16 21:35:27
+UPDATE cat SET num='2' where cat_id = 4
+
+--------------------------------------
+2019/05/16 21:35:36
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:36:20
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 21:36:20
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Now','3','fkjgrgr
+
+htrhytyj
+rtttttetrtrrtytrthdfvegsdfd','1558060580')
+
+--------------------------------------
+2019/05/16 21:36:20
+SELECT count(*) FROM art WHERE cat_id = 3
+
+--------------------------------------
+2019/05/16 21:36:20
+UPDATE cat SET num='1' where cat_id = 3
+
+--------------------------------------
+2019/05/16 21:36:35
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 3
+
+--------------------------------------
+2019/05/16 21:36:35
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 3
+
+--------------------------------------
+2019/05/16 21:36:35
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 21:37:01
+SELECT art_id, art.cat_id, cat_name, pubtime, title, comm, content FROM art LEFT JOIN cat ON art.cat_id = cat.cat_id
+
+--------------------------------------
+2019/05/16 21:44:17
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 21:44:17
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 21:44:17
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 21:56:41
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 21:56:41
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 21:56:41
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 21:59:09
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 22:10:22
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 22:13:51
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 22:13:51
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 22:13:52
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 22:14:29
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 22:16:26
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 22:16:26
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 22:19:30
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 22:21:34
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 22:22:05
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 22:23:54
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 22:23:54
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 22:23:54
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 22:24:46
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 22:25:21
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 22:25:21
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 22:25:21
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 22:25:42
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 22:25:42
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 22:25:42
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:10:02
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 23:10:02
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:10:02
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:10:05
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:10:36
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:11:49
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:12:09
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:12:09
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:12:09
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:12:16
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:12:55
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:14:02
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:14:37
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:16:07
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:17:42
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:18:03
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:19:35
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:21:27
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:21:27
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:21:36
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:21:36
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:21:36
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:26:32
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 23:26:32
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:26:32
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:27:12
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 23:27:12
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:27:12
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:27:16
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:27:16
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:27:16
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:27:43
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:27:43
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:27:43
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:27:46
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $v[cat_id]
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[cat_id]' at line 1
+
+--------------------------------------
+2019/05/16 23:27:46
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:27:46
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:28:08
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $v[cat_id]
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[cat_id]' at line 1
+
+--------------------------------------
+2019/05/16 23:28:08
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:28:08
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:28:15
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 23:28:15
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:28:15
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:28:18
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $v['cat_id']
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['cat_id']' at line 1
+
+--------------------------------------
+2019/05/16 23:28:18
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:28:18
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:31:09
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $v['cat_id']
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['cat_id']' at line 1
+
+--------------------------------------
+2019/05/16 23:31:09
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:31:09
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:31:15
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 23:31:15
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:31:15
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:33:06
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 23:33:06
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:33:06
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:33:14
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 23:33:14
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:33:14
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:33:32
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:33:32
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:33:35
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:33:35
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:33:35
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:33:56
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:33:56
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:33:56
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:34:23
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:34:23
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:34:23
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:34:31
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:34:31
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:34:31
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:35:13
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:35:13
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:35:13
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:35:21
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:35:21
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:35:21
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:35:55
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:35:55
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:36:13
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $v['cat_id']
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['cat_id']' at line 1
+
+--------------------------------------
+2019/05/16 23:36:13
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:36:13
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:36:35
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $v['cat_id']
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['cat_id']' at line 1
+
+--------------------------------------
+2019/05/16 23:36:35
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:36:35
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:36:46
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:36:46
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:36:56
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $v[cat_id]
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[cat_id]' at line 1
+
+--------------------------------------
+2019/05/16 23:36:56
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:36:56
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:39:17
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:39:17
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:39:25
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/16 23:39:25
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/16 23:39:25
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:39:38
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:39:38
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:39:38
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:40:02
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = $cat_id
+Unknown column '$cat_id' in 'where clause'
+
+--------------------------------------
+2019/05/16 23:40:02
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:40:02
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:47:12
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:47:12
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:49:46
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:49:46
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:49:46
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/16 23:50:03
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/16 23:50:03
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:50:03
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/16 23:50:09
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 23:50:10
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:50:10
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:50:18
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/16 23:50:18
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/16 23:50:18
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:50:28
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 2
+
+--------------------------------------
+2019/05/16 23:50:28
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:50:28
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:51:49
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 23:52:28
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 23:52:29
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Now','11','asdsfdgfh
+safsgfdhghjhkv
+agretrsc','1558068748')
+
+--------------------------------------
+2019/05/16 23:52:29
+SELECT count(*) FROM art WHERE cat_id = 11
+
+--------------------------------------
+2019/05/16 23:52:29
+UPDATE cat SET num='2' where cat_id = 11
+
+--------------------------------------
+2019/05/16 23:54:20
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/16 23:54:20
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/16 23:54:20
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:54:23
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/16 23:54:23
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/16 23:54:23
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/16 23:56:47
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 23:56:51
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 23:56:53
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 23:56:55
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/16 23:56:58
+SELECT * FROM cat
+
