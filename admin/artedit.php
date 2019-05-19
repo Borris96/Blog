@@ -22,6 +22,11 @@ $sqli = "SELECT * FROM cat";
 $cats = mGetall($sqli);
 // var_dump($cats);
 
+// $sqli = "SELECT tag FROM tag WHERE art_id = $art_id";
+// $tags = mGetAll($sqli);
+// var_dump($tags);
+// exit();
+
 if (empty($_POST)){
 	$sqli = "SELECT * FROM art WHERE art_id = $art_id";
 	$art = mGetRow($sqli);
@@ -46,14 +51,46 @@ else{
 		fail('Content should not be empty.');
 	}
 
+	$art['tag'] = trim($_POST['tags']);
+
+
 	$art['lastup'] = time();
+
+	// Tag
+	$tags = trim($_POST['tags']);
 
 	$rs = mExec($table,$art, $act='UPDATE', "art_id = $art_id"); // Must initialize which art_id to update.
 	if (!$rs){
 		fail('Update is failed...');
 	}else {
-		succ('Update successfully!');
+		if (empty($tags)) {
+			succ('Updated successfully!');
+		}
+		else {
+			$sqli = "DELETE FROM tag WHERE art_id = $art_id";
+			mQuery($sqli);
+			$tag = explode(',', $tags);
+
+			$sqli = "INSERT INTO tag(art_id, tag) VALUES ";
+			foreach ($tag as $v) {
+				$sqli .= '('.$art_id.', '."'$v'".'), ';
+			}
+			$sqli = rtrim($sqli, ', ');
+			// echo $sqli;
+			// exit();
+			$trs = mQuery($sqli);
+			if (!$trs){
+				$sqli = "Delete FROM art WHERE art_id = $art_id";
+				mQuery($sqli);
+				fail('Tag insert is failed.');
+			}
+			else{
+				succ('Updated successfully!');
+			}
+		}
+
 	}
+
 }
 
 ?>

@@ -36,6 +36,7 @@
                     <?php echo $art['content'];?>
                 </div>
             </article>
+            <?php if (!empty($art['comm'])) { ?>
             <div id="comments">
                 <?php foreach($comment as $v) {?>
                 <ol>
@@ -50,6 +51,7 @@
                 </ol>
                 <?php }?>
             </div>
+            <?php }?>
             <div id="respond" class="comment-respond">
                 <h3>Leave a Comment</h3>
                 <?php if (isset($crs) && ($crs === false)){?>

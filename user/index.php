@@ -20,7 +20,7 @@ if ($count == 0){
 	$arts = mGetAll($sqli);
 }
 else {
-	$sqli = "SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ".$where;
+	$sqli = "SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ".$where;
 	$arts = mGetAll($sqli);
 }
 

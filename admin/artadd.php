@@ -37,13 +37,50 @@ else{
 		fail('Added is failed...');
 	}
 	else{
+		// Update article number for this category.
 		$sqli = "SELECT count(*) FROM art WHERE cat_id = $art[cat_id]";
 		$catn['num'] = mGetOne($sqli);
 		// echo $cat['num'];
 		// exit();
 
 		mExec('cat', $catn, 'UPDATE', "cat_id = $art[cat_id]");
-		succ('Added successfully!');
+
+		$sqli = "SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1";
+		$art_id = mGetOne($sqli);
+		// Tag
+		$tags = trim($_POST['tags']);
+		$sqli = "UPDATE art SET tag = '$tags' WHERE art_id = $art_id"; //Where is a must!!!
+		mQuery($sqli);
+		if (empty($tags)) {
+			succ('Added successfully!');
+		}
+		else {
+			$sqli = "SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1";
+			$art_id = mGetOne($sqli);
+			// $art_id = getLastID(); //?
+			// echo $art_id;
+			// exit();
+			$tag = explode(',', $tags);
+			// var_dump($tag);
+			// exit();
+			// $sqli = "INSERT INTO tag(art_id, tag) VALUES ($art_id, $v)"
+			$sqli = "INSERT INTO tag(art_id, tag) VALUES ";
+			foreach ($tag as $v) {
+				$sqli .= '('.$art_id.', '."'$v'".'), ';
+			}
+			$sqli = rtrim($sqli, ', ');
+			// echo $sqli;
+			// exit();
+			$trs = mQuery($sqli);
+			if (!$trs){
+				$sqli = "Delete FROM art WHERE art_id = $art_id";
+				mQuery($sqli);
+				fail('Tag insert is failed.');
+			}
+			else{
+				succ('Added successfully!');
+			}
+		}
 	}
 }
 

@@ -5,6 +5,8 @@
 */
 require('/var/www/html/Blog/lib/init.php');
 $art_id = $_GET['art_id'];
+// echo $art_id;
+// exit();
 $sqli = "SELECT count(*) FROM art WHERE art_id = $art_id";
 $rs  = mGetOne($sqli);
 // echo $rs;
@@ -16,7 +18,7 @@ if ($rs == 0){
 }
 
 else {
-	$sqli = "SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1";
+	$sqli = "SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=$art_id";
 	$art = mGetRow($sqli);
 	// var_dump($art);
 
@@ -34,8 +36,10 @@ else {
 		$comm['email'] = $_POST['email'];
 		$comm['pubtime'] = time();
 		$crs = false;
-		if (!empty($comm['content']) && !empty($comm['email'])){
+		if (!empty($comm['content']) && !empty($comm['nick'])){
 			$crs = mExec('comment',$comm);
+			$sqli = "UPDATE art SET comm=comm+1 where art_id = $art_id";
+			mQuery($sqli);
 		}
 		// var_dump($crs);
 		// exit();

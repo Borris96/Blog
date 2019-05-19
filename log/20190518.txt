@@ -1,0 +1,1108 @@
+--------------------------------------
+2019/05/18 03:18:35
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 03:46:17
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 03:46:19
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 03:46:19
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('New','9','asdsdfas','1558169179')
+
+--------------------------------------
+2019/05/18 03:46:19
+SELECT count(*) FROM art WHERE cat_id = 9
+
+--------------------------------------
+2019/05/18 03:46:19
+UPDATE cat SET num='1' where cat_id = 9
+
+--------------------------------------
+2019/05/18 04:22:46
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:22:50
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:22:50
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('New','9','asdsdfas','1558171370')
+
+--------------------------------------
+2019/05/18 04:22:50
+SELECT count(*) FROM art WHERE cat_id = 9
+
+--------------------------------------
+2019/05/18 04:22:50
+UPDATE cat SET num='2' where cat_id = 9
+
+--------------------------------------
+2019/05/18 04:22:50
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 04:29:03
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:29:08
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:29:08
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('New','9','asdsdfas','1558171748')
+
+--------------------------------------
+2019/05/18 04:29:08
+SELECT count(*) FROM art WHERE cat_id = 9
+
+--------------------------------------
+2019/05/18 04:29:08
+UPDATE cat SET num='3' where cat_id = 9
+
+--------------------------------------
+2019/05/18 04:29:08
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 04:29:08
+INSERT INTO tag(art_id, tag) VALUES (16, New),(16, We),(16, You),
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+--------------------------------------
+2019/05/18 04:29:08
+Delete FROM art WHERE art_id = 16
+
+--------------------------------------
+2019/05/18 04:31:12
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:31:16
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:31:16
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('New','9','asdsdfas','1558171876')
+
+--------------------------------------
+2019/05/18 04:31:16
+SELECT count(*) FROM art WHERE cat_id = 9
+
+--------------------------------------
+2019/05/18 04:31:16
+UPDATE cat SET num='3' where cat_id = 9
+
+--------------------------------------
+2019/05/18 04:31:16
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 04:35:10
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:35:40
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:35:40
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('A','5','sjk','1558172140')
+
+--------------------------------------
+2019/05/18 04:35:40
+SELECT count(*) FROM art WHERE cat_id = 5
+
+--------------------------------------
+2019/05/18 04:35:40
+UPDATE cat SET num='1' where cat_id = 5
+
+--------------------------------------
+2019/05/18 04:35:40
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 04:35:53
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:35:56
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:35:57
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('A','5','sjk','1558172156')
+
+--------------------------------------
+2019/05/18 04:35:57
+SELECT count(*) FROM art WHERE cat_id = 5
+
+--------------------------------------
+2019/05/18 04:35:57
+UPDATE cat SET num='2' where cat_id = 5
+
+--------------------------------------
+2019/05/18 04:35:57
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 04:35:57
+INSERT INTO tag(art_id, tag) VALUES (19, New), (19, We), (19, You)
+Unknown column 'New' in 'field list'
+
+--------------------------------------
+2019/05/18 04:35:57
+Delete FROM art WHERE art_id = 19
+
+--------------------------------------
+2019/05/18 04:37:46
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:37:50
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 04:37:50
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('A','5','sjk','1558172270')
+
+--------------------------------------
+2019/05/18 04:37:50
+SELECT count(*) FROM art WHERE cat_id = 5
+
+--------------------------------------
+2019/05/18 04:37:50
+UPDATE cat SET num='2' where cat_id = 5
+
+--------------------------------------
+2019/05/18 04:37:50
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 20:47:32
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 20:47:32
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('A','5','sjk','1558230452')
+
+--------------------------------------
+2019/05/18 20:47:32
+SELECT count(*) FROM art WHERE cat_id = 5
+
+--------------------------------------
+2019/05/18 20:47:32
+UPDATE cat SET num='3' where cat_id = 5
+
+--------------------------------------
+2019/05/18 20:47:32
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 20:48:37
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 20:48:37
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('A','5','sjk','1558230517')
+
+--------------------------------------
+2019/05/18 20:48:37
+SELECT count(*) FROM art WHERE cat_id = 5
+
+--------------------------------------
+2019/05/18 20:48:37
+UPDATE cat SET num='4' where cat_id = 5
+
+--------------------------------------
+2019/05/18 20:48:37
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 20:48:53
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 20:48:53
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('A','5','sjk','1558230533')
+
+--------------------------------------
+2019/05/18 20:48:53
+SELECT count(*) FROM art WHERE cat_id = 5
+
+--------------------------------------
+2019/05/18 20:48:53
+UPDATE cat SET num='5' where cat_id = 5
+
+--------------------------------------
+2019/05/18 20:48:53
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 20:49:18
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 20:49:18
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('A','5','sjk','1558230558')
+
+--------------------------------------
+2019/05/18 20:49:18
+SELECT count(*) FROM art WHERE cat_id = 5
+
+--------------------------------------
+2019/05/18 20:49:18
+UPDATE cat SET num='6' where cat_id = 5
+
+--------------------------------------
+2019/05/18 20:49:18
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 20:49:31
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 20:49:31
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('A','5','sjk','1558230571')
+
+--------------------------------------
+2019/05/18 20:49:31
+SELECT count(*) FROM art WHERE cat_id = 5
+
+--------------------------------------
+2019/05/18 20:49:31
+UPDATE cat SET num='7' where cat_id = 5
+
+--------------------------------------
+2019/05/18 20:49:31
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 20:49:31
+INSERT INTO tag(art_id, tag) VALUES (25, 'New'), (25, 'We'), (25, 'You')
+
+--------------------------------------
+2019/05/18 21:10:04
+SELECT * FROM art WHERE art_id = 1
+
+--------------------------------------
+2019/05/18 21:10:04
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:10:04
+SELECT * FROM art WHERE art_id = 1
+
+--------------------------------------
+2019/05/18 21:10:18
+SELECT * FROM art WHERE art_id = 1
+
+--------------------------------------
+2019/05/18 21:10:18
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:10:18
+SELECT * FROM art WHERE art_id = 1
+
+--------------------------------------
+2019/05/18 21:11:54
+SELECT * FROM art WHERE art_id = 1
+
+--------------------------------------
+2019/05/18 21:11:54
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:11:54
+SELECT tag FROM tag WHERE art_id = 1
+
+--------------------------------------
+2019/05/18 21:12:05
+SELECT * FROM art WHERE art_id = 15
+
+--------------------------------------
+2019/05/18 21:12:05
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:12:05
+SELECT tag FROM tag WHERE art_id = 15
+
+--------------------------------------
+2019/05/18 21:12:19
+SELECT * FROM art WHERE art_id = 15
+
+--------------------------------------
+2019/05/18 21:12:19
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:12:19
+SELECT * FROM art WHERE art_id = 15
+
+--------------------------------------
+2019/05/18 21:12:24
+SELECT * FROM art WHERE art_id = 23
+
+--------------------------------------
+2019/05/18 21:12:24
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:12:24
+SELECT * FROM art WHERE art_id = 23
+
+--------------------------------------
+2019/05/18 21:12:29
+SELECT * FROM art WHERE art_id = 25
+
+--------------------------------------
+2019/05/18 21:12:29
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:12:29
+SELECT * FROM art WHERE art_id = 25
+
+--------------------------------------
+2019/05/18 21:12:36
+SELECT * FROM art WHERE art_id = 29
+
+--------------------------------------
+2019/05/18 21:13:26
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:13:55
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:13:55
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('What Tag','1','I need some tags to be saved.','1558232035')
+
+--------------------------------------
+2019/05/18 21:13:55
+SELECT count(*) FROM art WHERE cat_id = 1
+
+--------------------------------------
+2019/05/18 21:13:55
+UPDATE cat SET num='7' where cat_id = 1
+
+--------------------------------------
+2019/05/18 21:13:55
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 21:13:55
+INSERT INTO tag(art_id, tag) VALUES (26, 'Tag'), (26, 'Today'), (26, 'Meet')
+
+--------------------------------------
+2019/05/18 21:17:16
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:17:26
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:17:26
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Hey Tag','1','I need some tags to be saved.','1558232246')
+
+--------------------------------------
+2019/05/18 21:17:26
+SELECT count(*) FROM art WHERE cat_id = 1
+
+--------------------------------------
+2019/05/18 21:17:26
+UPDATE cat SET num='8' where cat_id = 1
+
+--------------------------------------
+2019/05/18 21:17:26
+INSERT INTO art(tag) VALUES Tag,Today,Meet
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Tag,Today,Meet' at line 1
+
+--------------------------------------
+2019/05/18 21:17:26
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 21:17:26
+INSERT INTO tag(art_id, tag) VALUES (27, 'Tag'), (27, 'Today'), (27, 'Meet')
+
+--------------------------------------
+2019/05/18 21:17:58
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:18:05
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:18:05
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Hey Tag 88','1','I need some tags to be saved.','1558232285')
+
+--------------------------------------
+2019/05/18 21:18:05
+SELECT count(*) FROM art WHERE cat_id = 1
+
+--------------------------------------
+2019/05/18 21:18:05
+UPDATE cat SET num='9' where cat_id = 1
+
+--------------------------------------
+2019/05/18 21:18:05
+INSERT INTO art(tag) VALUES ('Tag,Today,Meet')
+
+--------------------------------------
+2019/05/18 21:18:05
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 21:18:05
+INSERT INTO tag(art_id, tag) VALUES (29, 'Tag'), (29, 'Today'), (29, 'Meet')
+
+--------------------------------------
+2019/05/18 21:19:13
+SELECT * FROM art WHERE art_id = 29
+
+--------------------------------------
+2019/05/18 21:19:13
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:19:13
+SELECT * FROM art WHERE art_id = 29
+
+--------------------------------------
+2019/05/18 21:19:35
+SELECT art_id, art.cat_id, cat_name, pubtime, title, comm, content FROM art LEFT JOIN cat ON art.cat_id = cat.cat_id
+
+--------------------------------------
+2019/05/18 21:19:46
+SELECT * FROM art WHERE art_id = 29
+
+--------------------------------------
+2019/05/18 21:19:46
+DELETE FROM art WHERE art_id = 29
+
+--------------------------------------
+2019/05/18 21:19:48
+SELECT art_id, art.cat_id, cat_name, pubtime, title, comm, content FROM art LEFT JOIN cat ON art.cat_id = cat.cat_id
+
+--------------------------------------
+2019/05/18 21:19:55
+SELECT * FROM art WHERE art_id = 27
+
+--------------------------------------
+2019/05/18 21:19:55
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:19:55
+SELECT * FROM art WHERE art_id = 27
+
+--------------------------------------
+2019/05/18 21:20:18
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:20:39
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:20:39
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Hey Tag 10000','1','I need some tags to be saved.','1558232439')
+
+--------------------------------------
+2019/05/18 21:20:39
+SELECT count(*) FROM art WHERE cat_id = 1
+
+--------------------------------------
+2019/05/18 21:20:39
+UPDATE cat SET num='10' where cat_id = 1
+
+--------------------------------------
+2019/05/18 21:20:39
+INSERT INTO art(tag) VALUES ('Tags,USA,China')
+
+--------------------------------------
+2019/05/18 21:20:39
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 21:20:39
+INSERT INTO tag(art_id, tag) VALUES (31, 'Tags'), (31, 'USA'), (31, 'China')
+
+--------------------------------------
+2019/05/18 21:21:54
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:22:03
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:22:03
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Hey Tag 200','1','I need some tags to be saved.','1558232523')
+
+--------------------------------------
+2019/05/18 21:22:03
+SELECT count(*) FROM art WHERE cat_id = 1
+
+--------------------------------------
+2019/05/18 21:22:03
+UPDATE cat SET num='11' where cat_id = 1
+
+--------------------------------------
+2019/05/18 21:22:03
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 21:22:03
+INSERT INTO tag(art_id, tag) VALUES (32, 'Tags'), (32, 'USA'), (32, 'China')
+
+--------------------------------------
+2019/05/18 21:28:53
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:29:01
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:29:01
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('Hey Tag 500','1','I need some tags to be saved.','1558232941')
+
+--------------------------------------
+2019/05/18 21:29:01
+SELECT count(*) FROM art WHERE cat_id = 1
+
+--------------------------------------
+2019/05/18 21:29:01
+UPDATE cat SET num='12' where cat_id = 1
+
+--------------------------------------
+2019/05/18 21:29:01
+UPDATE art SET tag = 'Tags,USA,China'
+
+--------------------------------------
+2019/05/18 21:29:01
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 21:29:01
+INSERT INTO tag(art_id, tag) VALUES (33, 'Tags'), (33, 'USA'), (33, 'China')
+
+--------------------------------------
+2019/05/18 21:34:06
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:35:32
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:35:32
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('A disaster','2','We must include where before executing UPDATE query.','1558233332')
+
+--------------------------------------
+2019/05/18 21:35:32
+SELECT count(*) FROM art WHERE cat_id = 2
+
+--------------------------------------
+2019/05/18 21:35:32
+UPDATE cat SET num='1' where cat_id = 2
+
+--------------------------------------
+2019/05/18 21:35:32
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 21:35:32
+UPDATE art SET tag = 'Disaster,Must have where,when update' WHERE art_id = 34
+Data too long for column 'tag' at row 1
+
+--------------------------------------
+2019/05/18 21:35:32
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 21:35:32
+INSERT INTO tag(art_id, tag) VALUES (34, 'Disaster'), (34, 'Must have where'), (34, 'when update')
+
+--------------------------------------
+2019/05/18 21:39:31
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:39:36
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 21:39:36
+INSERT INTO art (title,cat_id,content,pubtime) VALUES ('A disaster','2','We must include where before executing UPDATE query.','1558233576')
+
+--------------------------------------
+2019/05/18 21:39:36
+SELECT count(*) FROM art WHERE cat_id = 2
+
+--------------------------------------
+2019/05/18 21:39:36
+UPDATE cat SET num='2' where cat_id = 2
+
+--------------------------------------
+2019/05/18 21:39:36
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 21:39:36
+UPDATE art SET tag = 'Disaster,Must have where,when update' WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 21:39:36
+SELECT art_id FROM art ORDER BY art_id DESC LIMIT 1
+
+--------------------------------------
+2019/05/18 21:39:36
+INSERT INTO tag(art_id, tag) VALUES (35, 'Disaster'), (35, 'Must have where'), (35, 'when update')
+
+--------------------------------------
+2019/05/18 22:29:54
+SELECT * FROM art WHERE art_id = 31
+
+--------------------------------------
+2019/05/18 22:29:54
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 22:29:54
+SELECT * FROM art WHERE art_id = 31
+
+--------------------------------------
+2019/05/18 22:30:00
+SELECT * FROM art WHERE art_id = 33
+
+--------------------------------------
+2019/05/18 22:30:00
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 22:30:00
+SELECT * FROM art WHERE art_id = 33
+
+--------------------------------------
+2019/05/18 22:30:04
+SELECT * FROM art WHERE art_id = 34
+
+--------------------------------------
+2019/05/18 22:30:04
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 22:30:04
+SELECT * FROM art WHERE art_id = 34
+
+--------------------------------------
+2019/05/18 22:30:08
+SELECT * FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 22:30:08
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 22:30:08
+SELECT * FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 22:46:35
+SELECT * FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 22:46:35
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 22:46:35
+SELECT * FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 22:46:38
+SELECT * FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 22:46:38
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 22:46:38
+UPDATE art SET title='A disaster', cat_id='2', content='We must include where before executing UPDATE query.', tag='Disaster,Must have where', lastup='1558237598' where art_id = 35
+
+--------------------------------------
+2019/05/18 22:46:38
+DELETE FROM tag WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 22:46:38
+INSERT INTO tag(art_id, tag) VALUES (35, 'Disaster'), (35, 'Must have where')
+
+--------------------------------------
+2019/05/18 23:03:33
+SELECT * FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:03:33
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 23:03:33
+SELECT * FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:03:37
+SELECT * FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:03:37
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/18 23:03:37
+SELECT * FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:04:00
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:04:00
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/18 23:04:00
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:04:00
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:04:00
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:04:12
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:04:12
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/18 23:04:12
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:04:12
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:04:12
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:04:37
+SELECT count(*) FROM art WHERE art_id = 3
+
+--------------------------------------
+2019/05/18 23:04:37
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/18 23:04:37
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/18 23:04:37
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:04:45
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:04:45
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/18 23:04:45
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:04:45
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:04:45
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:05:01
+SELECT count(*) FROM art WHERE art_id = 18
+
+--------------------------------------
+2019/05/18 23:05:01
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/18 23:05:01
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:05:01
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:05:01
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 18
+
+--------------------------------------
+2019/05/18 23:05:46
+SELECT count(*) FROM art WHERE art_id = 4
+
+--------------------------------------
+2019/05/18 23:05:46
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1
+
+--------------------------------------
+2019/05/18 23:05:46
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:05:46
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:05:46
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 4
+
+--------------------------------------
+2019/05/18 23:09:37
+SELECT count(*) FROM art WHERE art_id = 500
+
+--------------------------------------
+2019/05/18 23:09:37
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/18 23:09:37
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/18 23:09:37
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:10:30
+SELECT count(*) FROM art WHERE art_id = 5
+
+--------------------------------------
+2019/05/18 23:10:30
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=5
+
+--------------------------------------
+2019/05/18 23:10:30
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:10:30
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:10:30
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 5
+
+--------------------------------------
+2019/05/18 23:10:45
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:10:45
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/18 23:10:45
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:10:45
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:10:45
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:14:05
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:14:05
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/18 23:14:05
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:14:05
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:14:05
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:14:22
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:14:22
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/18 23:14:22
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:14:22
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:14:22
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:18:04
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:18:04
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/18 23:18:04
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:18:04
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:18:04
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:19:25
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:19:25
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/18 23:19:25
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:19:25
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:19:25
+INSERT INTO comment (art_id,nick,content,email,pubtime) VALUES ('35','Bao','Remeber it.','','1558239565')
+
+--------------------------------------
+2019/05/18 23:19:25
+UPDATE art SET comm=comm+1 where art_id = 35
+
+--------------------------------------
+2019/05/18 23:19:25
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:19:25
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:19:25
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/18 23:19:25
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:19:25
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/18 23:19:25
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/18 23:20:51
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/18 23:20:51
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/18 23:20:51
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:21:31
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/18 23:21:31
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/18 23:21:31
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:21:43
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/18 23:21:43
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/18 23:21:43
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/18 23:22:28
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/18 23:22:28
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/18 23:22:28
+SELECT cat_name, cat_id, num FROM cat
+
