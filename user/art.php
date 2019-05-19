@@ -3,6 +3,8 @@
 *
 *
 */
+// print_r($_SERVER);
+// exit();
 require('/var/www/html/Blog/lib/init.php');
 $art_id = $_GET['art_id'];
 // echo $art_id;
@@ -35,6 +37,13 @@ else {
 		$comm['content'] = $_POST['comment'];
 		$comm['email'] = $_POST['email'];
 		$comm['pubtime'] = time();
+
+		// var_dump(getIP());
+		// print_r(ip2long( getIP() ));
+		// exit();
+		// Remain unsolved
+		// $comm['ip'] = sprintf( '%u' , ip2long( getIP() ) );
+
 		$crs = false;
 		if (!empty($comm['content']) && !empty($comm['nick'])){
 			$crs = mExec('comment',$comm);

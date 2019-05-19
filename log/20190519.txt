@@ -1,0 +1,1233 @@
+--------------------------------------
+2019/05/19 00:50:28
+SELECT * FROM cat
+
+--------------------------------------
+2019/05/19 02:11:43
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/19 02:11:43
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/19 02:11:43
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:11:43
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 02:11:43
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/19 02:12:00
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/19 02:12:00
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/19 02:12:00
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:12:00
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 02:13:20
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/19 02:13:20
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/19 02:13:20
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:13:20
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 02:13:26
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/19 02:13:26
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/19 02:13:26
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:13:26
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 02:13:29
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/19 02:13:29
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/19 02:13:29
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:13:29
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 02:13:29
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/19 02:13:31
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/19 02:13:31
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/19 02:13:31
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:13:31
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 02:14:21
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/19 02:14:21
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/19 02:14:21
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:14:21
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 02:14:21
+SELECT art_id, nick, content, pubtime FROM comment WHERE art_id = 35
+
+--------------------------------------
+2019/05/19 02:14:23
+SELECT count(*) FROM art WHERE art_id = 35
+
+--------------------------------------
+2019/05/19 02:14:23
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 and art_id=35
+
+--------------------------------------
+2019/05/19 02:14:23
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:14:23
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 02:44:31
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:45:15
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:47:45
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:47:45
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/19 02:47:45
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:48:13
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:48:13
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/19 02:48:13
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:49:21
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:49:21
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/19 02:49:21
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:54:06
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:54:06
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/19 02:54:06
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:54:20
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:54:20
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/19 02:54:20
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:54:36
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:54:36
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 
+
+--------------------------------------
+2019/05/19 02:54:36
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:56:18
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:56:18
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 3
+
+--------------------------------------
+2019/05/19 02:56:18
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:56:24
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:56:24
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 0
+
+--------------------------------------
+2019/05/19 02:56:24
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:56:33
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:56:33
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 6
+
+--------------------------------------
+2019/05/19 02:56:33
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:56:41
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:56:41
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 0
+
+--------------------------------------
+2019/05/19 02:56:41
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:56:44
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:56:44
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 3
+
+--------------------------------------
+2019/05/19 02:56:44
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:56:48
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:56:48
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 12
+
+--------------------------------------
+2019/05/19 02:56:48
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:57:49
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:57:49
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 12
+
+--------------------------------------
+2019/05/19 02:57:49
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:57:53
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:57:53
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 6
+
+--------------------------------------
+2019/05/19 02:57:53
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:57:57
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:57:57
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 0
+
+--------------------------------------
+2019/05/19 02:57:58
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:58:07
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:58:07
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 0
+
+--------------------------------------
+2019/05/19 02:58:07
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:58:11
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:58:11
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 3
+
+--------------------------------------
+2019/05/19 02:58:11
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:58:15
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:58:15
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 6
+
+--------------------------------------
+2019/05/19 02:58:15
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:58:21
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:58:21
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 0
+
+--------------------------------------
+2019/05/19 02:58:21
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:58:29
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:58:29
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 12
+
+--------------------------------------
+2019/05/19 02:58:29
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:58:42
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:58:42
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:58:42
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 18
+
+--------------------------------------
+2019/05/19 02:58:42
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 18
+
+--------------------------------------
+2019/05/19 02:58:42
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:58:42
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:58:42
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:58:42
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 18
+
+--------------------------------------
+2019/05/19 02:58:42
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 02:58:50
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 02:58:50
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 24
+
+--------------------------------------
+2019/05/19 02:58:50
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:00:06
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:00:07
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 24
+
+--------------------------------------
+2019/05/19 03:00:07
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:00:15
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:00:15
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 15
+
+--------------------------------------
+2019/05/19 03:00:15
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:00:21
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:00:21
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 9
+
+--------------------------------------
+2019/05/19 03:00:21
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:00:26
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:00:26
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 3
+
+--------------------------------------
+2019/05/19 03:00:26
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:01:01
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:01:01
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 3,3
+
+--------------------------------------
+2019/05/19 03:01:01
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:01:05
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:01:05
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,3
+
+--------------------------------------
+2019/05/19 03:01:05
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:01:14
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:01:14
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 6,3
+
+--------------------------------------
+2019/05/19 03:01:14
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:01:18
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:01:18
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 12,3
+
+--------------------------------------
+2019/05/19 03:01:18
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:01:23
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/19 03:01:23
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 1 ORDER BY art_id DESC LIMIT 0,3
+
+--------------------------------------
+2019/05/19 03:01:23
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:01:32
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:01:32
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 3,3
+
+--------------------------------------
+2019/05/19 03:01:32
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:05:28
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 5
+
+--------------------------------------
+2019/05/19 03:05:28
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 5 ORDER BY art_id DESC LIMIT 0,3
+
+--------------------------------------
+2019/05/19 03:05:28
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:06:27
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:06:27
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 24,3
+
+--------------------------------------
+2019/05/19 03:06:27
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:06:47
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:06:47
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 24,3
+
+--------------------------------------
+2019/05/19 03:06:47
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:07:18
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:07:18
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 24,3
+
+--------------------------------------
+2019/05/19 03:07:18
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:13:05
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/19 03:13:05
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 1 ORDER BY art_id DESC LIMIT 0,3
+
+--------------------------------------
+2019/05/19 03:13:05
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:13:50
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/19 03:13:50
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 1 ORDER BY art_id DESC LIMIT 0,3
+
+--------------------------------------
+2019/05/19 03:13:50
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:13:54
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:13:54
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,3
+
+--------------------------------------
+2019/05/19 03:13:54
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:14:23
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:14:23
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,3
+
+--------------------------------------
+2019/05/19 03:14:23
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:14:27
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:14:27
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 6,3
+
+--------------------------------------
+2019/05/19 03:14:27
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:14:45
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:14:45
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,3
+
+--------------------------------------
+2019/05/19 03:14:45
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:14:52
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 5
+
+--------------------------------------
+2019/05/19 03:14:52
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 5 ORDER BY art_id DESC LIMIT 0,3
+
+--------------------------------------
+2019/05/19 03:14:52
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:14:55
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 5?page=2
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?page=2' at line 1
+
+--------------------------------------
+2019/05/19 03:14:55
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 0,3
+
+--------------------------------------
+2019/05/19 03:14:55
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:19:56
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:19:56
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 3,3
+
+--------------------------------------
+2019/05/19 03:19:56
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:20:33
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:20:33
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 3,3
+
+--------------------------------------
+2019/05/19 03:20:33
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:25:06
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:25:06
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 3,3
+
+--------------------------------------
+2019/05/19 03:25:06
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:25:08
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:25:08
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 6,3
+
+--------------------------------------
+2019/05/19 03:25:08
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 03:25:11
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 03:25:11
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 12,3
+
+--------------------------------------
+2019/05/19 03:25:11
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:01:42
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/19 04:01:42
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 1 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:01:42
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:02:23
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/19 04:02:23
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 1 ORDER BY art_id DESC LIMIT 5,5
+
+--------------------------------------
+2019/05/19 04:02:23
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:02:27
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/19 04:02:27
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 1 ORDER BY art_id DESC LIMIT 10,5
+
+--------------------------------------
+2019/05/19 04:02:27
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:02:30
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 5
+
+--------------------------------------
+2019/05/19 04:02:30
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 5 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:02:30
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:02:33
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 5
+
+--------------------------------------
+2019/05/19 04:02:33
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 5 ORDER BY art_id DESC LIMIT 5,5
+
+--------------------------------------
+2019/05/19 04:02:33
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:03:58
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 04:03:58
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:03:58
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:04:03
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 5
+
+--------------------------------------
+2019/05/19 04:04:03
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 5 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:04:03
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:05:20
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:05:20
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 5
+
+--------------------------------------
+2019/05/19 04:05:20
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 5 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:05:20
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:05:26
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:05:26
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 5
+
+--------------------------------------
+2019/05/19 04:05:26
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 5 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:05:26
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:05:28
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:05:28
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 04:05:28
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:05:28
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:05:32
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:05:32
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 1
+
+--------------------------------------
+2019/05/19 04:05:32
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 1 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:05:32
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:05:33
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:05:33
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 11
+
+--------------------------------------
+2019/05/19 04:05:33
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 11 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:05:33
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:05:35
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:05:35
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 8
+
+--------------------------------------
+2019/05/19 04:05:35
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:05:35
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:09:10
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:09:10
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 6
+
+--------------------------------------
+2019/05/19 04:09:10
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 6 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:09:10
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:09:16
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:09:16
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 6
+
+--------------------------------------
+2019/05/19 04:09:16
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 6 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:09:16
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:14:28
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:14:28
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 04:14:28
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:14:28
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:14:32
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:14:32
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 7
+
+--------------------------------------
+2019/05/19 04:14:32
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 7 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:14:32
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:14:48
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:14:48
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 04:14:48
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:14:48
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:14:52
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:14:52
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 7
+
+--------------------------------------
+2019/05/19 04:14:52
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 7 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:14:52
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:15:03
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:15:03
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 7
+
+--------------------------------------
+2019/05/19 04:15:03
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 7 ORDER BY art_id DESC LIMIT 5,5
+
+--------------------------------------
+2019/05/19 04:15:03
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:15:05
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:15:05
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 7
+
+--------------------------------------
+2019/05/19 04:15:05
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 7 ORDER BY art_id DESC LIMIT 10,5
+
+--------------------------------------
+2019/05/19 04:15:05
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:15:06
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:15:06
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 7
+
+--------------------------------------
+2019/05/19 04:15:06
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 7 ORDER BY art_id DESC LIMIT 15,5
+
+--------------------------------------
+2019/05/19 04:15:06
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:15:07
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:15:07
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 7
+
+--------------------------------------
+2019/05/19 04:15:07
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 7 ORDER BY art_id DESC LIMIT 25,5
+
+--------------------------------------
+2019/05/19 04:15:07
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:15:49
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:15:49
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 6
+
+--------------------------------------
+2019/05/19 04:15:49
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 6 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:15:49
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:16:54
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:16:54
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 04:16:54
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:16:54
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:17:03
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:17:03
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 04:17:03
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:17:03
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:17:09
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:17:09
+SELECT count(*) FROM art WHERE 1 AND art.cat_id = 5
+
+--------------------------------------
+2019/05/19 04:17:09
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 AND art.cat_id = 5 ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:17:09
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:17:45
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:17:45
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 04:17:45
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:17:45
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:17:48
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:17:48
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 04:17:48
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:17:48
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:17:52
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:17:52
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 04:17:52
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:17:52
+SELECT cat_name, cat_id, num FROM cat
+
+--------------------------------------
+2019/05/19 04:17:54
+SELECT count(*) FROM art
+
+--------------------------------------
+2019/05/19 04:17:54
+SELECT count(*) FROM art WHERE 1 
+
+--------------------------------------
+2019/05/19 04:17:54
+SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1  ORDER BY art_id DESC LIMIT 0,5
+
+--------------------------------------
+2019/05/19 04:17:54
+SELECT cat_name, cat_id, num FROM cat
+

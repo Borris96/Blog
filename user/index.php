@@ -9,18 +9,25 @@ if (isset($_GET['cat_id'])){
 else {
 	$where = '';
 }
-
+// Number of all articles.
+$sqli = "SELECT count(*) FROM art";
+$all = mGetOne($sqli);
 // Here should consider condition that no article in a category.
 $sqli = "SELECT count(*) FROM art WHERE 1 ".$where;
 $count = mGetOne($sqli);
-
 if ($count == 0){
-	echo "There is no article in this category. ";
-	$sqli = "SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ";
-	$arts = mGetAll($sqli);
+	$count = $all;
 }
-else {
-	$sqli = "SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ".$where;
+
+// Paginate
+$curr = isset($_GET['page']) ? $_GET['page'] : 1; // Current page number
+$cnt = 5;
+$page = getPage($count, $curr, $cnt);
+// print_r($page);
+// exit();
+
+if ($count != 0){
+	$sqli = "SELECT art_id, art.cat_id, cat_name, user_id, nick, title, content, pubtime, comm, tag FROM art LEFT JOIN cat on art.cat_id = cat.cat_id WHERE 1 ".$where. " ORDER BY art_id DESC LIMIT ".($curr-1)*$cnt.','.$cnt;
 	$arts = mGetAll($sqli);
 }
 
